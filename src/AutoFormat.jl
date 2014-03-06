@@ -41,6 +41,7 @@ function format(input::String, output::String, tab_width::Int)
     file_output = open(output, "w+")
     write(file_output, result)
     close(file_output)
+    print(output*" writing successfully")
   end
 end
 
