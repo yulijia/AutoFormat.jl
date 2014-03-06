@@ -9,7 +9,7 @@ export format
 function format(input::String, output::String, tab_width::Int)
   result = String[]
   layer = 1
-  block_start = ["^if" "^while" "^for" " begin " "^try" "^function" "^type" "^let" "^macro" "quote" " do " "^immutable"]
+  block_start = ["^if" "^while" "^for" " begin " "^try" "^function" "^type" "^let" "^macro" " do " "^immutable"] # mask quote
   block_other = ["^else\$", "^elseif "]
   open(input, "r") do file
     for line in eachline(file)
