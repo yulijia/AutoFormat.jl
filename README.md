@@ -10,7 +10,7 @@ Basic autoformat tool for Julialang
 
 	 Pkg.clone("git://github.com/yulijia/AutoFormat.jl.git")
 
-# Eample
+# Example
 
 	using AutoFormat
 	format("/home/yu/messy_code.jl","/home/yu/messy_code_format.jl",2)
