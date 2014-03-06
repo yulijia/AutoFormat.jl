@@ -18,7 +18,10 @@ Basic autoformat tool for Julialang
 
 # Todo
 * Collection Julia Coding Style (format Style)
-* fix bugs
+* Fix bugs
+  - can not format one line block
+  - matrix alignment
+  - wrong comments style
 * Other features
   - indent with tabs
   - print result with STDOUT
