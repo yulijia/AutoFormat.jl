@@ -64,9 +64,9 @@ function process_line(line::String)
   temp[block_count[map(isodd, block_count)]] = map(add_space, temp[block_count[map(isodd, block_count)]])
   templine = join(temp, "\"")
   if ismatch(r";",templine) && !ismatch(r"\";\"",templine)
-    line = join(map(lstrip,map(rstrip, split(templine,";"))), "\n")*"\n"
+    templine = join(map(lstrip, map(rstrip, split(templine, ";"))), "\n")*"\n"
   end
-  return line
+  return templine
 end
 
 # check whether contain a block keyword
