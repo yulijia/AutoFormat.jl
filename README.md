@@ -27,7 +27,7 @@ Read list:
         # download a messy code file example at https://gist.github.com/yulijia/9391666
 
 # Todo
-* Collection Julia Coding Style (format Style)
+* Learning abstract syntax tree
 * Fix bugs
   - can not format one line block
   - matrix alignment
