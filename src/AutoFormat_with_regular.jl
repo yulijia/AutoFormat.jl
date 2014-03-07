@@ -1,4 +1,4 @@
-module AutoFormat
+module AutoFormat_with_regular
 
 # package code goes here
 
