@@ -3,10 +3,10 @@ module AutoFormat_with_regular
 # package code goes here
 
 # minimal function export list
-export format
+export format_demo
 
 # main format function
-function format(input::String, output::String, tab_width::Int)
+function format_demo(input::String, output::String, tab_width::Int)
   result = String[]
   layer = 1
   block_start = ["^if" "^while" "^for" " begin " "^try" "^function" "^type" "^let" "^macro" " do " "^immutable"] # mask quote
