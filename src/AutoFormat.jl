@@ -19,6 +19,8 @@ function format_demo(input::String, output::String, tab_width::Int)
         line = process_line(line)
         line = " "^(tab_width*(layer-1))*line
         layer = layer+1
+      elseif sum(check_block_keyword(line, block_start))>0 && ismatch(r"end$", line)
+        line = " "^(tab_width*(layer-1))*line
       elseif sum(check_block_keyword(line, block_other))>0
         layer = layer-1
         line = process_line(line)
