@@ -21,7 +21,7 @@ Read list:
 
 # Example
 
-	using AutoFormat_with_regular
+	using AutoFormat
 	format("/home/yu/messy_code.jl","/home/yu/messy_code_format.jl",2)
         # usage : format_demo(input_file,output_file,tab_width)
         # download a messy code file example at https://gist.github.com/yulijia/9391666
